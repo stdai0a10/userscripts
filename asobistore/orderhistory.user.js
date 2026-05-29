@@ -3,8 +3,8 @@
 // @description  Help to navigate to product pages from order history
 // @version      2025-12-01
 // @license      MIT
-// @homepage     https://github.com/stdai1016
-// @namespace    https://github.com/stdai1016/userscripts/asobistore
+// @homepage     https://github.com/stdai0a10
+// @namespace    https://github.com/stdai0a10/userscripts/asobistore
 // @icon         https://icons.duckduckgo.com/ip2/asobistore.jp.ico
 // @match        https://shop.asobistore.jp/mypage/orderhistory/detail/*
 // @grant        none
