@@ -9,7 +9,7 @@
 // @description  An userscript to load twitter images in gamer.com.tw if web browser is in tracking protection mode
 // @version      0.4.6
 // @license      MIT
-// @namespace    https://github.com/stdai1016
+// @namespace    https://github.com/stdai0a10
 // @match        https://forum.gamer.com.tw/C.php?*
 // @match        https://forum.gamer.com.tw/Co.php?*
 // @match        https://forum.gamer.com.tw/post1.php?*

@@ -10,7 +10,7 @@
 // @description:zh-tw   跳過（自動同意）PTT 網頁內容分級警告
 // @version      0.1.1
 // @license      MIT
-// @namespace    https://github.com/stdai1016
+// @namespace    https://github.com/stdai0a10
 // @match        https://www.ptt.cc/ask/over18?*
 // @grant        none
 // ==/UserScript==

@@ -3,8 +3,8 @@
 // @description Mute posts containing specified keywords
 // @version     0.1.0b
 // @license     MIT
-// @homepage    https://github.com/stdai1016
-// @namespace   https://github.com/stdai1016/userscripts/plurk
+// @homepage    https://github.com/stdai0a10
+// @namespace   https://github.com/stdai0a10/userscripts/plurk
 // @icon        https://icons.duckduckgo.com/ip2/plurk.com.ico
 // @match       https://www.plurk.com/*
 // @exclude     https://www.plurk.com/_*

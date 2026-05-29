@@ -3,7 +3,7 @@
 // @description  GM_fetch
 // @version      0.1.0b
 // @license      MIT
-// @namespace    https://github.com/stdai1016
+// @namespace    https://github.com/stdai0a10
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 

@@ -9,7 +9,7 @@
 // @description  An userscript to load twitter images in plurk.com if web browser is in tracking protection mode
 // @version      0.4.6
 // @license      MIT
-// @namespace    https://github.com/stdai1016
+// @namespace    https://github.com/stdai0a10
 // @match        https://www.plurk.com/*
 // @grant        GM_xmlhttpRequest
 // @connect      pbs.twimg.com

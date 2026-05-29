@@ -3,8 +3,8 @@
 // @description  Help to copy product names from order history
 // @version      2025-12-01
 // @license      MIT
-// @homepage     https://github.com/stdai1016
-// @namespace    https://github.com/stdai1016/userscripts/melonbooks
+// @homepage     https://github.com/stdai0a10
+// @namespace    https://github.com/stdai0a10/userscripts/melonbooks
 // @icon         https://icons.duckduckgo.com/ip2/melonbooks.co.jp.ico
 // @match        https://www.melonbooks.co.jp/mypage/history.php
 // @match        https://www.melonbooks.co.jp/mypage/history_detail.php

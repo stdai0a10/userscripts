@@ -3,7 +3,7 @@
 // @description  Multi thread downloader
 // @version      0.1.0
 // @license      MIT
-// @namespace    https://github.com/stdai1016
+// @namespace    https://github.com/stdai0a10
 // ==/UserScript==
 
 /**
