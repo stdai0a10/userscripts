@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name        Bookmarks Helper
+// @name        Missing Bookmarks Helper
 // @description Show ID of missing artworks
-// @version     0.1.2
+// @version     0.1.3
 // @license     MIT
 // @homepage    https://github.com/stdai0a10
 // @namespace   https://github.com/stdai0a10/userscripts/pixiv
