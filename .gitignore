@@ -1,1 +1,6 @@
-.gitattributes
+.vscode/
+.sample/
+
+node_modules/
+package-lock.json
+yarn.lock
