@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Clean Tweet URL
 // @description Clean tweet URL
-// @version     0.2.0
+// @version     0.3.0
 // @license     MIT
 // @homepage    https://github.com/stdai0a10
 // @namespace   https://github.com/stdai0a10/userscripts/x_com
@@ -16,6 +16,7 @@
 // @match       *://fixvx.com/*
 // @match       *://foxvx.com/*
 // @run-at      document-start
+// @noframes
 // @grant       none
 // ==/UserScript==
 
@@ -25,7 +26,15 @@
   'use strict';
 
   const tweet = window.location.pathname.match(/^\/(\w+|i\/web)\/status\/\d+/);
-  if (tweet && window.location.pathname !== tweet[0]) {
-    window.location.replace('https://x.com' + tweet[0]);
+  const dirty =
+    tweet &&
+    (window.location.pathname !== tweet[0] ||
+      window.location.search ||
+      window.location.hash);
+
+  if (dirty) {
+    const url = `https://${window.location.host}${tweet[0]}`;
+    if (window.history === undefined) window.location.replace(url);
+    else window.history.replaceState(null, document.title, url);
   }
 })();
