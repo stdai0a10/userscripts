@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Media Saver
 // @description Save media from tweets
-// @version     0.1.1
+// @version     0.1.2
 // @license     MIT
 // @homepage    https://github.com/stdai0a10
 // @namespace   https://github.com/stdai0a10/userscripts/x_com
@@ -21,7 +21,7 @@
 
   const P_URL_TWEET = /^https:\/\/(?:mobile\.|)x\.com\/(\w+)\/status\/(\d+)/;
   const P_URL_TWEET_MEDIA =
-    /^https:\/\/(?:mobile\.|)x\.com\/(\w+)\/status\/(\d+)\/(\w+)\/(\d)$/;
+    /^https:\/\/(?:mobile\.|)x\.com\/(\w+)\/status\/(\d+)\/(\w+)\/(\d+)$/;
   const P_URL_MEDIA = /^(https?:\/\/.+)\?format=(\w+)&name=(\w+)$/;
   const P_URL_MEDIA_LEGACY = /^(https?:\/\/.+)\.(\w+)(?::(\w+)|)$/;
   const S_DIALOG = 'div.r-17gur6a[role="dialog"]';
