@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Menu</title>
+    <script>
+      const showValue = (value) => {
+        const text = JSON.stringify(value, null, 2);
+        document.getElementById('displayer').value = text;
+      };
+
+      window.__GM_storage = {};
+      window.GM_getValue = (key, defaultValue = null) => {
+        return window.__GM_storage[key] ?? defaultValue;
+      };
+      window.GM_setValue = (key, value) => {
+        window.__GM_storage[key] = value;
+        showValue(window.__GM_storage);
+      };
+      window.GM_deleteValue = (key) => {
+        delete window.__GM_storage[key];
+        showValue(window.__GM_storage);
+      };
+      window.GM_registerMenuCommand = (name, callback, options) => {
+        const id = options['id'] ?? btoa(name);
+        const menu = document.getElementById('GM_menu');
+        menu.insertAdjacentHTML('beforeend', `<div name="${id}">${name}</div>`);
+        document.querySelector(`#GM_menu [name="${id}"]`).onclick = () => {
+          setTimeout(callback, 0);
+        };
+        return id;
+      };
+      window.GM_unregisterMenuCommand = (id) => {
+        document.querySelector(`#GM_menu [name="${id}"]`)?.remove();
+      };
+
+      window.onload = () => showValue(window.__GM_storage);
+    </script>
+    <style>
+      :root {
+        font-size: 16px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+      }
+      .card {
+        width: 300px;
+        margin: 10px;
+      }
+      .card > .title {
+        font-size: 1.2rem;
+        padding: 2px 0;
+        margin-bottom: 8px;
+        border-bottom: 2px solid #000;
+      }
+      #GM_menu > * {
+        cursor: pointer;
+        border: 1px solid black;
+        padding: 5px;
+        margin-bottom: 1px;
+      }
+      #GM_menu > *:hover {
+        background-color: #eee;
+      }
+      #displayer {
+        width: 100%;
+        min-height: 300px;
+        resize: vertical;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="title">GM_menu</div>
+      <div id="GM_menu"></div>
+    </div>
+    <div class="card">
+      <div class="title">GM_storage</div>
+      <textarea id="displayer" disabled></textarea>
+    </div>
+
+    <script src="../google/gmail_file_pwd_entry.user.js"></script>
+  </body>
+</html>
