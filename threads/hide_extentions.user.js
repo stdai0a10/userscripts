@@ -4,7 +4,7 @@
 // @version     0.1.0
 // @license     MIT
 // @namespace   stdai0a10.github.io/userscripts/threads
-// @icon        https://icons.duckduckgo.com/ip2/threads.com.ico
+// @icon        https://static.cdninstagram.com/rsrc.php/yP/r/0Qa-AOmHi0c.ico
 // @homepage    https://github.com/stdai0a10
 // @match       https://www.threads.com/*
 // @grant       GM_addStyle
